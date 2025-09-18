@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="light">
+    <header>
+        <h1>Interactive Features and Form Validation</h1>
+        <p>A simple example to demonstrate JavaScript event handling and DOM manipulation.</p>
+    </header>
+
+    <main>
+        <section class="interactive-section">
+            <h2> Part 1 & 2: Interactive Elements</h2>
+            
+            <div class="feature-box">
+                <h3>Light/Dark Mode</h3>
+                <p>Click the button to change the page theme.</p>
+                <button id="theme-toggle">Toggle Theme</button>
+            </div>
+
+            <div class="feature-box">
+                <h3>Simple Counter</h3>
+                <p>Click the buttons to increase or decrease the count.</p>
+                <div class="counter-container">
+                    <button id="decrease-btn">-</button>
+                    <span id="counter-display">0</span>
+                    <button id="increase-btn">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2> Part 3: Form Validation</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name: </label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+                <p class="form-status" id="form-status"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
